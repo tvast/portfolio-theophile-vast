@@ -1,0 +1,102 @@
+a {
+  color: black;
+
+}
+
+a:hover {
+  color: grey;
+
+}
+
+html {
+  background:white;
+}
+canvas {
+  display:block;
+  margin:auto;
+  background:white;
+}
+
+.centered {
+	 vertical-align: middle;
+   margin-top: 15%;
+   margin: 0 auto;
+  vertical-align: middle;
+    text-align:center;
+}
+.example{
+  background:black;
+   /*min-height: 500px;*/
+  width: 50%;
+  height: 120px;
+ /* border:1px #000 solid;*/
+  /*margin:20px auto;*/
+ /* padding:20px;*/
+  /*-moz-border-radius:3px;
+  -webkit-border-radius:3px*/
+}
+
+h1 {
+	 font-family: 'Permanent Marker', cursive;
+	margin: 0 auto;
+	vertical-align: middle;
+    text-align:center;
+    z-index: 100;
+    font-size: 3em;
+   /* text-decoration: line-through;*/
+
+}
+h3 {
+   font-family: 'Permanent Marker', cursive;
+  margin: 0 auto;
+  vertical-align: middle;
+    text-align:center;
+    z-index: 100;
+    font-size: 2em;
+}
+
+.fixed {
+  /*position: fixed;
+  bottom: 0;
+  left: 40%;*/
+  margin: 0 auto;
+}
+
+#audioplayer{
+    width: 480px;
+    height: 60px;
+    margin: 50px auto auto auto;
+  border: solid;
+}
+
+#pButton{
+    height:60px; 
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    outline:none;
+}
+
+.play{background: url('http://www.alexkatz.me/codepen/img/play.png') ;}
+.pause{background: url('http://www.alexkatz.me/codepen/img/pause.png') ;}
+
+#timeline{
+    width: 400px;
+    height: 20px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+    background: rgba(0,0,0,.3);
+  
+}
+#playhead{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 0, 0,1);
+
+} 

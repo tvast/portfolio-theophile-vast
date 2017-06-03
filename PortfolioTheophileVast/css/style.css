@@ -1,0 +1,284 @@
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/*Paralax code*/
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.95;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("background23.jpg");
+  min-height: 100%;
+   height: 500px;
+}
+
+.bgimg-2 {
+  /*background-image: url("https://scontent.xx.fbcdn.net/v/t31.0-8/15128813_915832865184223_71113063036085295_o.jpg?oh=1f940ae878adad4dee36737a88e10250&oe=5914FD98");*/
+  min-height: 10%;
+  background-color: black
+
+}
+
+.bgimg-3 {
+  background-image: url("4.jpg  ");
+  min-height: 100%;
+}  
+
+.caption {
+  
+  left: 0;
+  top: 50%;
+  width: 100%;
+  vertical-align: center
+  color: black;
+  z-index: 100
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.element{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 22px;
+  margin: 10px 0 0 10px;
+  animation: type 4s steps(60, end); 
+}
+
+.element2{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 12px;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+  /* The Overlay (background) */
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #1b76a3; /* Black fallback color */
+    background-color: #1b76a3; /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #c6ff00;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  .menu {
+    font-size: 4em;
+    color:white;
+    float: right;
+    /*z-index: 0;*/
+    position: absolute;
+    right: 0;
+  }
+
+  .menu:hover {
+    font-size: 5em;
+    color:grey;
+  }
+
+  /*parralax*/
+  body, html {
+    height: 100%;
+  }
+
+  .vuu {
+    position: absolute;
+    right: 0%;
+    position: static;
+    float: right;
+  }
+
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    /*border: 3px solid green;*/
+    padding: 10px;
+  }
+
+  .logo {
+      font-family: "Merriweather",
+}
+
+nav {
+  position: fixed;
+  z-index: 30;
+}
+
+.tlt {
+  color: white;
+}
+
+.gradient {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#c6ff00, #1b76a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*z-index: 100;*/
+}
+
+.colorTOMATE {
+  color: tomato;
+}
+
+.bakcgroundBlue {
+  background-color: #ff324a;
+}
+.bg {
+  
+   min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right, 
+    #92FE9D, #00C9FF, 
+    #a044ff, #e73827);
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+  animation: gradient 50s ease infinite;
+}
+
+@keyframes gradient { 
+  0%{background-position:0% 0%}
+  50%{background-position:100% 100%}
+  100%{background-position:0% 0%}
+}
+
+.foo {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/*Gradient logo*/
+
+.bloc-logo {
+    position: relative;
+    width: 130px;
+    height: 49px;
+    float: left;
+}
+
+.bloc-logo canvas,
+.bloc-logo .logo-mask {
+    display: block;
+    width: 130px;
+    height: 49px;
+}
+
+.bloc-logo .logo-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 130px;
+    background-image: url("Minmatar_logo.png");
+    text-indent: -9999px;
+}
+
+
+

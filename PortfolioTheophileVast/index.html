@@ -1,0 +1,485 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Théophile Vast | Portfolio</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <script src="js/modernizr.custom.js"></script>
+    <style type="text/css">
+    .bloc-logo {
+      position: relative;
+      width: 150px;
+      height: 60px;
+      float: left;
+    }
+
+    .bloc-logo canvas,
+    .bloc-logo .logo-mask {
+      display: block;
+      width: 150px;
+      height: 60px;
+    }
+
+    .bloc-logo .logo-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: 150px;
+      background-image: url("Quadrivium.png");
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+    }
+  </style>
+  
+</head>
+<body onload="generateString()">
+  <nav class="white"  role="navigation">
+    <div class="nav-wrapper container">
+
+      <a  id="foo"  
+      href="#" class="foo gradient logo brand-logo">Théophile Vast</a>
+    <!--   <div class="brand-logo bloc-logo">
+          <canvas id="logo-canvas"></canvas>
+          <a onclick="openNav()" href="index.html" class="logo-mask">Granim.js</a>
+      </div -->>
+
+       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="blue-grey-text darken-4" href="javascript:void(0)" class="closebtn" onclick="openNav()">☰</a></li>
+        <!-- <li><a class="blue-grey-text darken-4" href="badges.html">Components</a></li>
+        <li><a class="blue-grey-text darken-4" href="collapsible.html">JavaScript</a></li> -->
+      </ul>
+
+      <!-- <span class="menu gradient " onclick="openNav()">☰</span> -->
+      <div id="myNav" class="overlay">
+<!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+
+        <!-- Overlay content -->
+        <div class="foo overlay-content">
+          <a href="about.html">About</a>
+          <a href="service.html">Services</a>
+          <a href="project.html">Project</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+      </div>
+
+    </nav>
+
+    <div id="navigationStop" class="bgimg-3 valign-wrapper">
+      <div class="caption">
+        <div class="section no-pad-bot" id="index-banner">
+          <div class="container ">
+            <br><br>
+            <h1 onload="urlRandom()" class="foo tlt header center logo">Portfolio</h1>
+            <div class="row center">
+              <h5 class="tlt header col s12 light">front end engineering fanatic</h5>
+
+            </div>
+            <div class="row center">
+              <a onclick="myStopFunction(),openTerminal()" href="#" id="download-button" class="btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4">Stop the dandom string</a>
+            </div>
+            <br><br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="">
+        <br><br>
+        <h1  class="foo header center logo">My projects</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Clic on picture to go to the project</h5>
+        </div>
+        <div class="row center">
+        </div>
+        <br><br>
+        <!-- <div class="container">  -->
+        <div class="main">
+          <ul id="og-grid" class="og-grid">
+            <li>
+              <a data-largesrc="img/ccw1.jpg " href="#"data-title="Cosmic Civil war " data-description="javascript video game made with vanilla js">
+                <img src="img/thumbs/ccw2.jpg" alt="img01"/>
+              </a>
+            </li>
+            <li>
+              <a  data-largesrc="img/crb2.jpg" data-title="CEREBRO" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                <img src="img/thumbs/crb1.jpg" alt="img02"/>
+              </a>
+            </li>
+            <li>
+              <a  data-largesrc="img/nao2.jpg" data-title="Hackathon NAO" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                <img src="img/thumbs/nao2.jpg" alt="img03"/>
+              </a>
+            </li>
+            <li>
+              <a  data-largesrc="img/mdp1.jpg" data-title="MIDIPILE" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                <img src="img/thumbs/mdp1.jpg" alt="img01"/>
+              </a>
+            </li>
+            <li>
+              <a  data-largesrc="img/poshka.jpg" data-title="POSHKA" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                <img src="img/thumbs/poshka.jpg" alt="img02"/>
+              </a>
+            </li>
+            <li>
+              <a data-largesrc="img/gloubouloux.jpg" data-title="WOLFSOUND" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                <img src="img/thumbs/gloubouloux.jpg" alt="img03"/>
+              </a>
+            </li>
+            <li>
+
+              <li>
+                <a  data-largesrc="img/edouard.jpg" data-title="Edouard Wolton" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                  <img src="img/thumbs/edouard.jpg" alt="img01"/>
+                </a>
+              </li>
+              <li>
+                <a  href="http://theophilevast.fr/galaxound/galaxound.html"  data-largesrc="img/galaxound.jpg" data-title="GALAXOUND" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                  <img src="img/thumbs/galaxound.jpg" alt="img01"/>
+                </a>
+              </li>
+              <li>
+                <a  data-largesrc="img/hexagon.jpg" data-title="HEXAGON AGENCY" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                  <img src="img/thumbs/hexagon.jpg" alt="img01"/>
+                </a>
+              </li>
+              <li>
+                <a  data-largesrc="img/glouton.jpg" data-title="GLOUTON & CO" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                  <img src="img/thumbs/glouton.jpg" alt="img01"/>
+                </a>
+              </li>
+              <li>
+                <a  data-largesrc="img/ife.jpg" data-title="Institut francais d'Espagne" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                  <img src="img/thumbs/ife.jpg" alt="img01"/>
+                </a>
+              </li>
+              <li>
+                <a  data-largesrc="img/cv.jpg" data-title="Générateur de cv" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                  <img src="img/thumbs/cv.jpg" alt="img01"/>
+                </a>
+              </li>
+              <li>
+                <a  data-largesrc="img/noel.jpg" data-title="Carte de voeux noël" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                  <img src="img/thumbs/noel.jpg" alt="img01"/>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+          <div class="bg valign-wrapper">
+            <div class="caption center ">
+            <h1  class="foo header center logo">I tailor well crafted website </h1>
+              <a href="CV-theophile-vast (3).pdf" target="blank" class="btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4">resume</a>
+            </div>
+          </div>
+        <!-- <div class="bg">
+          <h1>I'm So Beautiful</h1>
+        </div> -->
+        <div class="container">
+          <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row logo">
+              <br><br>
+              <!-- <h1  class="foo header center logo">I tailor well crafted website </h1> -->
+              <div class="row center">
+                <h5 class="header col s12 light">with the best UX/UI</h5>
+              </div>
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <h2 class="animated infinite swing center #42a5f5 darken-4-text"><i class="material-icons">web</i></h2>
+                  <h4 class="center">Front end specialist</h4>
+
+                  <p class="light size">Discover my project on this website. I work with Node, Angular 2, Git, HTML, CSS, Vanilla Javascript and many other cool stuff</p>
+                </div>
+              </div>
+
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <h2 class="animated infinite rotateOut center #42a5f5 darken-4-text"><i class="material-icons">settings</i></h2>
+                  <h4 class="center">Fullstack experience</h4>
+
+                  <p class="light size">I've worked for 3 years as a freelance developers. I've also work at voyages-sncf.Com in the Supervision team</p>
+                </div>
+              </div>
+
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <h2 class=" center #42a5f5 darken-4-text"><i class="material-icons">trending_up</i></h2>
+                  <h4 class="center">Agile knowledge</h4>
+
+                  <p class="light size">I'm trained with agile and I love daily scrum meeting, retrospectives and all scrum rituals </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+
+        </div>
+        <div class="bg valign-wrapper">
+        <div class="caption center ">
+          <h1 class="foo header center logo">And the folks i've worked for</h1>
+        </div>
+      </div>
+      <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+
+          <div class="row center">
+          </div>
+          <br><br>
+          
+          <div class="row">
+            <div class="col s6 center"><img width="20%" src="https://media.licdn.com/media/p/2/000/0a2/0f1/15a5eb9.png"></div>
+
+            <div class="col s6 center"><img width="20%" src="https://media.licdn.com/media/AAEAAQAAAAAAAATEAAAAJDI5MzVmZTNjLTM2NjYtNDgwZC04NzgyLTAzY2YyNzFkNTFiNQ.png"></div>
+          </div>
+          <div class="row">
+            <div class="col s6 center"><img width="20%" src="https://media.licdn.com/media/AAEAAQAAAAAAAAMJAAAAJGY4YWQ5NGRiLWY3MWMtNDVmOC04MTMyLTNlYjlhYzgyOWM5Yw.png"></div>
+            <div class="col s6 center"><img width="20%" src="https://media.licdn.com/media/AAEAAQAAAAAAAARgAAAAJDllMjgzOGM2LWJjOGMtNDI3NC1hZThkLWYyYzJiMTliODIyZg.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row container">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="icon_prefix" type="text" class="validate">
+        <label for="icon_prefix">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">mail</i>
+        <input id="icon_telephone" type="tel" class="validate">
+        <label for="icon_telephone">Telephone</label>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">mode_edit</i>
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Votre message</label>
+      </div>
+    </div>
+    <a hreff="mailto:xx@gmail.com" class="waves-effect waves-light btn  blue-grey darken-4 right"><i class="material-icons left">cloud</i>Envoyer</a>
+  </form>
+</div> -->
+
+<!-- <footer class="page-footer  blue-grey darken-4">
+  <div class="footer-copyright">
+    <div class="container">
+      Made by <a class="white-text" href="http://materializecss.com">Théophile Vast</a>in his <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+    </div>
+  </div>
+</footer> -->
+
+<footer id="contact" class="page-footer black scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+                <form class="col s12 whi" action="contact.php" method="post">
+                    <div class="row"> 
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix"></i>
+                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-communication-email prefix "></i>
+                            <input id="icon_email" name="email" type="email" class="validate white-text">
+                            <label for="icon_email" class="">Email-id</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-editor-mode-edit prefix"></i>
+                            <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                            <label for="icon_prefix2" class="">Message</label>
+                        </div>
+                        <div class="col offset-s7 s5">
+                            <button class="btn waves-effect waves-light blue-grey darken-4" type="submit">Submit
+                                <i class="mdi-content-send right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">theophilevast.fr</h5>
+                <ul>
+                    <li><a class="white-text" href="http://www.joashpereira.com/">Home</a></li>
+                    <li><a class="white-text" href="http://www.joashpereira.com/blog">Blog</a></li>
+                </ul>
+            </div>
+<!--             <div class="col l3 s12">
+                <h5 class="white-text">Social</h5>
+                <ul>
+                    <li>
+                        <a class="" href="https://www.behance.net/joashp">
+                            <i class="small fa fa-behance-square "></i> Behance
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="https://www.facebook.com/joash.c.pereira">
+                            <i class="small fa fa-facebook-square "></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="https://github.com/joashp">
+                            <i class="small fa fa-github-square "></i> Github
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="https://www.linkedin.com/in/joashp">
+                            <i class="small fa fa-linkedin-square"></i> Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Made by <a class="white-text" href="http://joashpereira.com">Théophile Vast</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+        </div>
+    </div>
+</footer>
+
+
+<!--  Scripts-->
+<script src="https://use.fontawesome.com/9177f2934e.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script src="js/materialize.js"></script>
+
+<!-- gallerie -->
+<script src="js/init.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script> 
+<script type="text/javascript" src="js/texilate.js"></script> 
+<script type="text/javascript" src="js/lettering.js"></script>
+<script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+<script type="text/javascript" src="js/animation.js"></script> 
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript">
+  $('.tlt').textillate({ in: { effect: 'rollIn' } });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- Codedrop grid -->
+<script src="js/grid.js"></script>
+<script>
+  $(function() {
+    Grid.init();
+  });
+</script>
+
+<!-- typed.js -->
+
+<script src="js/js/typed.js"></script>
+<script>
+  $(function(){
+    $(".element").typed({
+      strings: [
+      "Bonjour",
+      "Hello dear visitor",
+      "I'm looking ",
+      "for a job",
+      "As a fullstack",
+      "javascript",
+      "front end ",
+      "developer",
+      "I'm available"
+
+
+      ],
+            // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+            stringsElement: null,
+            // typing speed
+            typeSpeed: 20,
+            // time before typing starts
+            startDelay: 0,
+            // backspacing speed
+            backSpeed: 0,
+            // shuffle the strings
+            shuffle: false,
+            // time before backspacing
+            backDelay: 50,
+            // loop
+            loop: true,
+            // false = infinite
+            loopCount: true,
+            // show cursor
+            showCursor: true,
+            // character for cursor
+            cursorChar: "|",
+            // attribute to type (null == text)
+            attr: null,
+            // either html or text
+            contentType: 'html',
+            // call when done callback function
+            callback: function() {},
+            // starting callback function before each string
+            preStringTyped: function() {},
+            //callback for every typed string
+            onStringTyped: function() {
+
+            },
+            // callback for reset
+            resetCallback: function() {
+              $(form).show()
+            }
+          });
+  });
+</script>
+
+<script type="text/javascript">
+  function openTerminal() {
+    window.open("terminal.html", "name=_blank","width=600,height=100");
+  }
+</script>
+<script type="text/javascript" src="js/dom-animator.js"></script>
+<script>
+  var domAnimator = new DomAnimator();
+  domAnimator.addFrame('Hacking');
+  domAnimator.addFrame('Making');
+  domAnimator.addFrame('Doing');
+  domAnimator.addFrame('Thanks for your visit');
+  domAnimator.animate(1000); //ms
+</script>
+<script src="js/granim.js-1.0.6/dist/granim.min.js"></script>
+  <script type="text/javascript">
+    var granimInstance = new Granim({
+      element: '#logo-canvas',
+      direction: 'left-right',
+      opacity: [1, 1],
+      states : {
+        "default-state": {
+          gradients: [
+          ['#EB3349', '#F45C43'],
+          ['#FF8008', '#FFC837'],
+          ['#4CB8C4', '#3CD3AD'],
+          ['#24C6DC', '#514A9D'],
+          ['#FF512F', '#DD2476'],
+          ['#DA22FF', '#9733EE']
+          ],
+          transitionSpeed: 2000
+        }
+      }
+    });
+  </script>
+</body>
+</html>

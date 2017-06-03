@@ -1,0 +1,27 @@
+Aujourd’hui je vous présente mon travail de refonte d’expérience utilisateur sur un outil d’alerting utilisant le projet open source seyren. J’ai réalisé ce projet au sein de VSCT (la branche technologique du site voyages-sncf.com). Pour expliquer le contexte le projet est réalisé en deux couche. Une partie service en java springboot et une partie dashboard en angular 2. La partie service traite les informations envoyé via l’API de seyren et la partie dashboard les affiches. Le cahier des charges était de proposer une alternative aux composants de bootstrap et d’améliorer le layout de certaines partie du site. Voici quelques captures d’écran de la version originale :
+
+Accueil du service d’alerting :
+
+Création d’une alarme :
+
+J’ai donc choisi d’implémenter la librairie materialize pour angular 2 et d’utiliser ses composants pour refondre l’expérience utilisateur selon le best practices de Google. J’ai analyser que deux boutons étaient essentiel à l’utilisation de l’application et j’ai voulu dans un premier temps les redisposer selon les guidelines. Tout d’abord l’affichage de toutes les alarmes correspondait à un retour vers l’accueil du site.
+
+J’ai donc ajouté un lien vers l’accueil dans le titre du site comme c’est l’habitude sur beaucoup d’autres sites. Ensuite j’ai voulu mettre en valeur et faire ressortir l’action principale du site c’est à dire créer une alarme. 
+
+J’ai donc utilisé un floating button (FAB) afin de lui attribuer la fonction d’ajouter une alarme.
+
+ 
+
+Résultat sur l’application
+
+Voyons le résultat de cette refonte sur l’accueil :
+
+Puis sur le formulaire :
+
+J’ai aussi ajouté un double slider grâce à noUiSlider pour sélectionner la plage horaire de l’alarme.
+
+Enfin la police des titres a été modifié pour apporter plus d’élégance et de modernité à l’application d’alerting. J’ai utilisé une google font : Poiret one. Cette utilisation a été faites pour ne pas alourdir le chargement du site.
+
+ 
+
+Merci pour votre visite et à très bientôt pour un nouveau projet !
