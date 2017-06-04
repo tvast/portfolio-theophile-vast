@@ -46,14 +46,14 @@
 
       <!-- <a  id="foo"  
       href="#" class="foo gradient logo brand-logo">Théophile Vast</a> -->
-      <div class="brand-logo bloc-logo">
+      <div class=" container brand-logo bloc-logo">
           <canvas id="logo-canvas"></canvas>
           <a onclick="openNav()" href="index.html" class="logo-mask">Granim.js</a>
       </div>
 
        <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="blue-grey-text darken-4" href="javascript:void(0)" class="closebtn" onclick="openNav()">☰</a></li>
-        <!-- <li><a class="blue-grey-text darken-4" href="badges.html">Components</a></li>
+    <!--     <li><a class="blue-grey-text darken-4" href="badges.html">Components</a></li>
         <li><a class="blue-grey-text darken-4" href="collapsible.html">JavaScript</a></li> -->
       </ul>
 
@@ -73,9 +73,13 @@
 
       </div>
 
-    </nav>
+    </nav> 
 
-    <div id="navigationStop" class="bgimg-3 valign-wrapper">
+     
+
+      <div class="bg valign-wrapper">
+            <div class="caption center ">
+                <div id="navigationStop" class="bgimg-3 valign-wrapper">
       <div class="caption">
         <div class="section no-pad-bot" id="index-banner">
           <div class="container ">
@@ -94,6 +98,11 @@
         </div>
       </div>
     </div>
+            </div>
+          </div> 
+          <div id="particle-canvas"></div>     
+
+
         <div class="bg valign-wrapper">
             <div class="caption center ">
             <h1  class="foo header center logo">Work</h1>
@@ -487,5 +496,9 @@
       }
     });
   </script>
+  <script type="text/javascript" src="js/https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
+  <script type="text/javascript" src="js/particles.js"></script>
+  
+
 </body>
 </html>
