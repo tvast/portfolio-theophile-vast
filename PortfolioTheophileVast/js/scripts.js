@@ -10,7 +10,9 @@
 
 		/*console.log(text) ;*/
 		/*document.getElementById("foo").innerHTML= text;*/
-		parent.location.hash = text;
+		// parent.location.hash = text;
+
+		document.getElementById("isRandom").innerHTML=text
 
 /*		if (window.history.state) {
 		   /*window.history.pushState(state, title, href);
@@ -34,8 +36,8 @@
 
 
 		clearInterval(myVar);
-		/*document.getElementById("foo").innerHTML= "Quadrivium"
-*/	}
+		document.getElementById("isRandom").innerHTML= "Portfolio"
+	}
 
 
 	/* Open when someone clicks on the span element */

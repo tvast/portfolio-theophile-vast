@@ -8,53 +8,48 @@
   <link rel="stylesheet" href="styles.css" media="all">
   <link rel="stylesheet" href="materialize/css/materialize.css" media="all">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <script
+  <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 
-<script src="./HTML5 - 3D Particles in a 2D Canvas_files/modernizr-2.0.6.js"></script>
+  <script src="./HTML5 - 3D Particles in a 2D Canvas_files/modernizr-2.0.6.js"></script>
 </head>
 <body>
-<div class="container center">
+  <div class="container center">
 
-<h1>Quadrivium</h1>
-<h3>Portfolio Théophile Vast</h3>
+    <h1>Quadrivium</h1>
+    <h3>Portfolio Théophile Vast</h3>
 
-<div class="center">
-  <a href="PortfolioTheophileVast/index.html" class="black waves-effect waves-light btn">enter</a>
-</div>
-
-
-<canvas id="canvasOne" width="900" height="520">
-Your browser does not support HTML5 canvas.
-</canvas>
-
-<!-- <div class="center">
-  <a href="">Enter</a>
-</div> -->
-<!-- <div class="center">
-  <div class="fixed centered"><h3>PORTFOLIO THEOPHILE VAST 2017</h3> </div>
-</div> -->
-
-
-
-</div>
+        <div class="center">
+          <a href="#" class="black waves-effect waves-light btn">enter</a>
+        </div>
+          <h3 id="demo"></h3>
+          <canvas id="canvasOne" width="900" height="520">
+            Your browser does not support HTML5 canvas.
+          </canvas>
+    </div>
 <script type="text/javascript" src="sphere.js"></script>
 
+<script type="text/javascript">
+  document.addEventListener("click", function(){
+    document.getElementById("demo").innerHTML = "June 2017";
+  });
+</script>
 
-    
-  <!-- kaleidoscope -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-$(".kal_cont").each(function(i){ 
-$(this).mousemove(function(e) {
-$(this).find(".ksc").each(function(i){ 
-$(this).css({backgroundPosition: e.pageX+"px "+e.pageY+"px"});
-});
-});
-});
-});
+
+
+<!-- kaleidoscope -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".kal_cont").each(function(i){ 
+      $(this).mousemove(function(e) {
+        $(this).find(".ksc").each(function(i){ 
+          $(this).css({backgroundPosition: e.pageX+"px "+e.pageY+"px"});
+        });
+      });
+    });
+  });
 </script>
 </body>
 </html>
