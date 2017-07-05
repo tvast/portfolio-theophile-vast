@@ -43,32 +43,7 @@
 
   </head>
   <body onload="generateString()">
-    <nav class="white"  role="navigation">
-      <div class="nav-wrapper container">
-      <!-- Logo gradient -->
-      <a  id="foo"  href="#" class="foo2">Théophile Vast</a>
-        <!-- <div class=" container brand-logo center bloc-logo">
-          <canvas id="logo-canvas"></canvas>
-          <a onclick="openNav()" href="index.html" class="logo-mask">Granim.js</a>
-        </div> -->
 
-       <!--  <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a class="blue-grey-text darken-4" href="javascript:void(0)" class="closebtn" onclick="openNav()">☰</a></li>
-        </ul> -->
-
-    
-      <!--   <div id="myNav" class="overlay">
-      
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      
-          <div class="foo overlay-content">
-            <a href="#work">WORK</a>
-            <a href="service.html">Quadrivium</a>
-            <a href="project.html">COMPANY</a>
-            <a href="contact.html">Contact</a>
-          </div>
-        </div> -->
-    </nav> 
 <!--     <div class="valign-wrapper">
       <div class="caption center ">
         <div id="navigationStop" class="bgimg-3 valign-wrapper">
@@ -112,7 +87,7 @@
 
                 </div>
                 <div class="row center">
-                  <a onclick="myStopFunction(),openTerminal()" href="#" id="download-button" class="btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4">Stop the dandom string</a>
+                  <a onclick="myStopFunction(),openTerminal()" href="#" id="download-button" class="btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4">Stop the random string</a>
                 </div>
   </div>
 </div>
@@ -293,108 +268,53 @@
     </div>
   </div>
 
-<!-- <div class="row container">
-  <form class="col s12">
-    <div class="row">
-      <div class="input-field col s6">
-        <i class="material-icons prefix">account_circle</i>
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">First Name</label>
+        <div class="bg valign-wrapper">
+        <div class="caption center ">
+        <h1 class="foo header center logo">Contact me</h1>
+          <h3>Im 'available for javascript fullstack front end engineer</h3> 
+          <h3> Let get in touch !</h3>
+          <a href="CV-theophile-vast (3).pdf" target="blank" class="btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4">HIRE ME</a>
+        </div>
       </div>
-      <div class="input-field col s6">
-        <i class="material-icons prefix">mail</i>
-        <input id="icon_telephone" type="tel" class="validate">
-        <label for="icon_telephone">Telephone</label>
-      </div>
-      <div class="input-field col s12">
-        <i class="material-icons prefix">mode_edit</i>
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
-        <label for="textarea1">Votre message</label>
-      </div>
-    </div>
-    <a hreff="mailto:xx@gmail.com" class="waves-effect waves-light btn  blue-grey darken-4 right"><i class="material-icons left">cloud</i>Envoyer</a>
-  </form>
-</div> -->
 
-<!-- <footer class="page-footer  blue-grey darken-4">
-  <div class="footer-copyright">
-    <div class="container">
-      Made by <a class="white-text" href="http://materializecss.com">Théophile Vast</a>in his <i class="fa fa-space-shuttle" aria-hidden="true"></i>
-    </div>
+  <header>
+    
+  </header>
+
+  <div id="form">
+
+    <div class="fish" id="fish"></div>
+    <div class="fish" id="fish2"></div>
+
+    <form action="mailto:someone@example.com" method="post" id="waterform" method="post">
+
+      <div class="formgroup foo" id="name-form">
+        <label for="name">Your name*</label>
+        <input type="text" id="name" name="name" />
+      </div>
+
+      <div class="formgroup foo" id="email-form">
+        <label for="email">Your e-mail*</label>
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <div class="formgroup foo" id="message-form">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+
+      <input type="submit" value="Send your message!" />
+
+    </form>
   </div>
-</footer> -->
 
-<footer id="contact" class="page-footer black scrollspy">
-  <div class="container">  
-    <div class="row">
-      <div class="col l6 s12">
-        <form class="col s12 whi" action="contact.php" method="post">
-          <div class="row"> 
-            <div class="input-field col s6">
-              <i class="mdi-action-account-circle prefix"></i>
-              <input id="icon_prefix" name="name" type="text" class="validate white-text">
-              <label for="icon_prefix" class="">First Name</label>
-            </div>
-            <div class="input-field col s6">
-              <i class="mdi-communication-email prefix "></i>
-              <input id="icon_email" name="email" type="email" class="validate white-text">
-              <label for="icon_email" class="">Email-id</label>
-            </div>
-            <div class="input-field col s12">
-              <i class="mdi-editor-mode-edit prefix"></i>
-              <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
-              <label for="icon_prefix2" class="">Message</label>
-            </div>
-            <div class="col offset-s7 s5">
-              <button class="btn waves-effect waves-light blue-grey darken-4" type="submit">Submit
-                <i class="mdi-content-send right"></i>
-              </button>
-            </div>
-          </div>
-        </form>
+  <footer class="page-footer  blue-grey darken-4">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="white-text" href="http://materializecss.com">Théophile Vast</a>in his <i class="fa fa-space-shuttle" aria-hidden="true"></i>
       </div>
-      <div class="col l3 s12">
-        <h5 class="white-text">theophilevast.fr</h5>
-        <ul>
-          <li><a class="white-text" href="http://www.joashpereira.com/">Home</a></li>
-          <li><a class="white-text" href="http://www.joashpereira.com/blog">Blog</a></li>
-        </ul>
-      </div>
-<!--             <div class="col l3 s12">
-                <h5 class="white-text">Social</h5>
-                <ul>
-                    <li>
-                        <a class="" href="https://www.behance.net/joashp">
-                            <i class="small fa fa-behance-square "></i> Behance
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="https://www.facebook.com/joash.c.pereira">
-                            <i class="small fa fa-facebook-square "></i> Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="https://github.com/joashp">
-                            <i class="small fa fa-github-square "></i> Github
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="https://www.linkedin.com/in/joashp">
-                            <i class="small fa fa-linkedin-square"></i> Linkedin
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </div> -->
-      <div class="footer-copyright default_color">
-        <div class="footer-copyright">
-          <div class="container">
-            Made by <a class="brown-text text-lighten-3" href="http://theophilevast.fr">Théophile Vast aka Elipoeht in his <i class="animate bounce infinite fa fa-rocket" aria-hidden="true"></i> with <i class="fa fa-heartbeat" aria-hidden="true"></i></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
 
 
@@ -518,6 +438,39 @@
 </script>
 <script type="text/javascript" src="js/particles.js-master/particles.js"></script>
 <script src="js/particles.js-master/app.js"></script>
+<script type="text/javascript">
+  $('document').ready(function(){
+  $('input[type="text"], input[type="email"], textarea').focus(function(){
+    var background = $(this).attr('id');
+    $('#' + background + '-form').addClass('formgroup-active');
+    $('#' + background + '-form').removeClass('formgroup-error');
+  });
+  $('input[type="text"], input[type="email"], textarea').blur(function(){
+    var background = $(this).attr('id');
+    $('#' + background + '-form').removeClass('formgroup-active');
+  });
+
+function errorfield(field){
+  $(field).addClass('formgroup-error');
+  console.log(field); 
+}
+
+$("#waterform").submit(function() {
+  var stopsubmit = false;
+
+if($('#name').val() == "") {
+  errorfield('#name-form');
+  stopsubmit=true;
+}
+if($('#email').val() == "") {
+  errorfield('#email-form');
+  stopsubmit=true;
+}
+  if(stopsubmit) return false;
+});
+    
+});
+</script>
 
 
 </body>
